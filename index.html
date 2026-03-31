@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Flappy Modiji</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+
+        <div id="start-screen" class="overlay">
+            <h1>Flappy Modiji</h1>
+            <p>Press Space or Tap to Jump</p>
+            <p class="small-text">(Replace assets in 'assets' folder)</p>
+            <button id="start-btn">Start Game</button>
+        </div>
+
+        <div id="game-over-screen" class="overlay hidden">
+            <h1>Flappybird Modiji</h1>
+            <p id="score-text">Deshbhakti Points: <span id="final-score">0</span></p>
+            <p id="high-score-text">Highest Deshbhakti: <span id="highest-score">0</span></p>
+            <button id="restart-btn">Try Again</button>
+        </div>
+
+        <div id="hud">
+            <span id="score-display">0</span>
+        </div>
+    </div>
+
+    <!-- Audio Placeholders -->
+    <audio id="bgMusic" src="assets/bg_music.mp3" preload="auto" loop></audio>
+    <audio id="gameOverAudio" src="assets/game_over.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "flappy-modiji",
+  "version": "1.0.0",
+  "description": "Flappy Modiji - Custom HTML5 Game",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "author": "Antigravity",
+  "license": "MIT"
+}
